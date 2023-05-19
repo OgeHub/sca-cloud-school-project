@@ -5,7 +5,7 @@ const app = require("./app");
 
 mongoose.set("strictQuery", false);
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.DATABASE_URI)
   .then((db) => {
     console.log(`[MongoDB connected]: ${db.connection.host}`);
   })
