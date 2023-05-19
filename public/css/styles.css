@@ -1,0 +1,23 @@
+body {
+  background-color: #f58fcc;
+}
+
+.centered {
+  padding-top: 180px;
+  text-align: center;
+}
+
+.testimonial-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #8b1874;
+  background-color: #fff;
+}
+
+.add-margin {
+  margin-top: 20px;
+}
+
+.heart {
+  color: red;
+}

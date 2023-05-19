@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <h1 class="display-3">My experience at SCA Cloud School</h1>
+
+    <form action="/testimonials/create" method="POST">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control text-center add-margin"
+          name="author"
+          placeholder="Your name"
+        />
+        <input
+          type="text"
+          class="form-control text-center add-margin"
+          name="body"
+          placeholder="Your experience"
+        />
+      </div>
+      <button type="submit" class="btn btn-dark add-margin">Submit</button>
+    </form>
+  </div>
+</div>
+<%- include('partials/footer') %>
