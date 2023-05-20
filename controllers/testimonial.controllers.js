@@ -2,14 +2,17 @@ const Testimonial = require("../models/testimonial.model");
 
 const createTestimonial = async (req, res, next) => {
   try {
-    const { author, body } = req.body;
+    const { author, experience } = req.body;
+    console.log(author, experience);
 
-    const testimonial = await Testimonial.create({ author, body });
-
-    console.log(testimonial);
-    return res.status(201).render("testimonial", {
-      testimonial: testimonial.body
+    const testimonial = new Testimonial({
+      author,
+      experience
     });
+    await testimonial.save();
+
+    const { yourExperience } = testimonial;
+    return res.status(201).render("testimonial");
   } catch (error) {
     next(error);
   }

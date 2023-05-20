@@ -1,14 +1,14 @@
 <%- include('partials/header') %>
 
-<div class="jumbotron text-center">
-  <div class="container">
+<div class="container bgd">
+  <div class="jumbotron text-center">
     <h1 class="display-3">
       Testimonials of SCA Cloud School Cohort 4 Students
     </h1>
 
     <% testimonials.forEach(function(testimonial){ %>
-    <h3 class="testimonial-text"><%=testimonial.author%></h3>
-    <p class="testimonial-text"><%=testimonial.body%></p>
+    <h3 class="testimonial-text"><%= testimonial.author %></h3>
+    <p class="testimonial-text"><%= testimonial.experience %></p>
     <% }); %>
 
     <hr />

@@ -1,14 +1,15 @@
 <%- include('partials/header') %>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <h1 class="display-3">Your testimonial!</h1>
+<div class="container bgd">
+  <div class="jumbotron text-center">
+    <h1 class="display-3">Your testimonial has been added!</h1>
 
-    <p class="testimonial-text"><%testimonial.body%></p>
+    <a class="btn btn-dark btn-lg" href="/testimonials/all" role="button"
+      >See all testimonials</a
+    >
+    <a class="btn btn-dark btn-lg" href="/" role="button">Back</a>
 
     <hr />
-
-    <a class="btn btn-dark btn-lg" href="/" role="button">Back</a>
   </div>
 </div>
 

@@ -7,7 +7,7 @@ const testimonialSchema = new mongoose.Schema(
       required: true
     },
 
-    body: {
+    experience: {
       type: String,
       required: true
     }
