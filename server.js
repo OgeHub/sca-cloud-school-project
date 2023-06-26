@@ -11,7 +11,7 @@ mongoose
   })
   .catch((err) => {
     console.error(`[Unable to connect to MongoDB]: ${err.message}`);
-    process.exit(1);
+    // process.exit(1);
   });
 
 const PORT = process.env.PORT || 3000;
