@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true.
-          tags: ogeedocker/sca-app1:1.0
+          tags: ogeedocker/sca-app:2.0
